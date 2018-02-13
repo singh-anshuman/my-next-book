@@ -1,4 +1,4 @@
-package com.anshu.mynextbook.user.model;
+package com.anshu.mynextbook.author.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,13 +7,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="USER_DETAILS")
-public class User {
+@Table(name="AUTHOR_DETAILS")
+public class Author {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
-	
 	private String firstName;
 	private String lastName;
 	
